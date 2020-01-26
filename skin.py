@@ -82,8 +82,6 @@ config.skin.primary_skin = ConfigText(default = "skin.xml")
 config.skin.xres = ConfigInteger(default = 0)
 
 profile("LoadSkin")
-
-profile("LoadSkin")
 try:
 	loadSkin('skin_user.xml', SCOPE_CONFIG)
 except (SkinError, IOError, AssertionError), err:
